@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" fill="none">
+  <!-- Cube Icon -->
+  <g transform="translate(5, 5)">
+    <path d="M30 3 L57 18.5 L57 49.5 L30 65 L3 49.5 L3 18.5 Z" stroke="#689F38" stroke-width="4.5" fill="#004058" stroke-linejoin="round"/>
+    <text x="18" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="24" fill="#689F38">T</text>
+    <text x="33" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">S</text>
+  </g>
+
+  <!-- Text -->
+  <text x="78" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#689F38" letter-spacing="-0.5">Tran<tspan fill="#004058">Smart</tspan></text>
+</svg>

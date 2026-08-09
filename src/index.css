@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-navy: #004058;
+    --primary-navy-dark: #072B3C;
+    --accent-green: #689F38;
+    --accent-green-hover: #58872F;
+    --accent-green-light: #EBF4E5;
+    --bg-slate: #F8FAFC;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Utilities and Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(104, 159, 56, 0.4); }
+  50% { box-shadow: 0 0 0 16px rgba(104, 159, 56, 0); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark-glass-card {
+  background: rgba(7, 43, 60, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-hero-bg {
+  background: linear-gradient(135deg, #072B3C 0%, #004058 55%, #0A536F 100%);
+}
+
+.gradient-green-badge {
+  background: linear-gradient(135deg, #689F38 0%, #4D7A27 100%);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #689F38;
+}
