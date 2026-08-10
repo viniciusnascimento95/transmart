@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../assets/logo-transmart.png';
 
 interface LogoProps {
   variant?: 'light' | 'dark';
@@ -23,9 +24,9 @@ export const Logo: React.FC<LogoProps> = ({
 
   return (
     <div className={`flex flex-col items-start select-none group ${className}`}>
-      {/* Official Client Logo Image Asset */}
+      {/* Official Client Logo Image Asset (Bundled for GitHub Pages subpaths) */}
       <img
-        src="/logo-transmart.png"
+        src={logoImg}
         alt="TranSmart Logística Inteligente"
         className={`${currentHeight} w-auto object-contain transition-transform duration-300 group-hover:scale-105 ${
           variant === 'dark' ? 'brightness-110 contrast-125' : ''
