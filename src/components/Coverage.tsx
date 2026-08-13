@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Search, CheckCircle2, Clock, HelpCircle, ArrowRight } from 'lucide-react';
+import { MapPin, Search, CheckCircle2, HelpCircle, ArrowRight } from 'lucide-react';
 import { CITIES_24H, COMPANY_INFO } from '../data/content';
 
 export const Coverage: React.FC = () => {
@@ -16,14 +16,14 @@ export const Coverage: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#689F38]/15 text-[#58872F] text-xs font-bold uppercase tracking-wider">
-            <Clock className="w-4 h-4 text-[#689F38]" />
-            Atendimento em até 24 Horas
+            <MapPin className="w-4 h-4 text-[#689F38]" />
+            Atendimento RS
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#004058] tracking-tight">
-            Região Metropolitana de Porto Alegre
+            Abrangência Estadual
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Garantimos prazos de coleta e entrega acelerada em 15 municípios estratégicos com rota diária programada.
+            Abrangemos todo o RS através de parceiros estratégicos em cada região. Com foco de atendimento na região metropolitana de POA onde fica nossa sede.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export const Coverage: React.FC = () => {
           <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-[#689F38]" />
-              <h3 className="font-bold text-[#004058] text-lg">Cidades com Atendimento 24h Garantido</h3>
+              <h3 className="font-bold text-[#004058] text-lg">Cidades atendidas a partir da sede</h3>
             </div>
             <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#689F38]/10 text-[#58872F]">
               {filteredCities.length} Municípios

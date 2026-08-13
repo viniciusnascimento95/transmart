@@ -37,7 +37,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenQuoteModal }) => {
             Soluções Sob Medida para a Sua Operação
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Atendemos desde demandas urgentes de frete dedicado até operações rotineiras de distribuição e cross-docking em 24h.
+            Atendemos desde demandas urgentes de frete dedicado e last mile até operações rotineiras de distribuição logística.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenQuoteModal }) => {
               </span>
               <h3 className="text-xl font-bold text-white">Necessidade Específica?</h3>
               <p className="text-slate-200 text-sm leading-relaxed">
-                Desenvolvemos projetos logísticos personalizados para cargas especiais, itinerários dedicados e demandas corporativas com tabelas simplificadas.
+                Desenvolvemos projetos logísticos personalizados para o seu negócio, itinerários dedicados e demandas corporativas com tabelas simplificadas.
               </p>
             </div>
 

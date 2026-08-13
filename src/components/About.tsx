@@ -57,9 +57,6 @@ export const About: React.FC = () => {
             </div>
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-bold text-white">Nosso Propósito</h3>
-              <span className="px-3 py-1 rounded-full bg-[#689F38] text-white font-bold text-xs">
-                "{COMPANY_INFO.lema}"
-              </span>
             </div>
             <p className="text-slate-200 leading-relaxed text-base">
               {COMPANY_INFO.purpose}

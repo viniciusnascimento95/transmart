@@ -30,8 +30,8 @@ export const COMPANY_INFO = {
   instagram: '@transmart_log',
   instagramUrl: 'https://www.instagram.com/transmart_log/',
   website: 'www.transmart.com.br',
-  address: 'Av. Plínio Kroeff, 1100 - Porto Alegre - RS, CEP 91150-170',
-  mapsUrl: 'https://maps.google.com/?q=Av.+Pl%C3%ADnio+Kroeff,+1100+-+Porto+Alegre+-+RS,+91150-170',
+  address: 'Av. Bernardino Silveira Amorim, 1485 - Santa Rosa de Lima, Porto Alegre - RS, 91160-001',
+  mapsUrl: 'https://maps.google.com/?q=Av.+Bernardino+Silveira+Amorim,+1485+-+Santa+Rosa+de+Lima,+Porto+Alegre+-+RS,+91160-001',
   
   mission: 'Nosso compromisso é proporcionar soluções eficientes e seguras no transporte de cargas, conectando pessoas e negócios através de uma logística inteligente. Buscamos sempre superar as expectativas de nossos clientes, garantindo a entrega ágil e confiável de seus produtos dentro da nossa cadeia de atendimento.',
   
@@ -77,14 +77,6 @@ export const SERVICES_DATA: ServiceItem[] = [
     iconName: 'Navigation',
   },
   {
-    id: 'cross-docking',
-    title: 'Cross-docking 24h',
-    shortDesc: 'Coleta diária programada e entregas entregues ao cliente em até 24 horas.',
-    fullDesc: 'Serviço focado na coleta e entrega diária do seu produto. Seguimos um cronograma de coleta automática na sua empresa e entregas dentro de um prazo de 24h no seu cliente.',
-    highlight: 'Prazo em até 24 horas',
-    iconName: 'Clock',
-  },
-  {
     id: 'paletizacao',
     title: 'Paletização',
     shortDesc: 'Padronização e montagem de pallets sob medida em nosso CD antes da entrega.',
@@ -123,7 +115,7 @@ export const CITIES_24H: string[] = [
 export const INFRASTRUCTURE_ITEMS = [
   {
     title: 'Centro de Distribuição em Porto Alegre',
-    stat: '650m²',
+    stat: 'Estratégico',
     description: 'CD estratégico preparado para recepção, armazenagem rápida, triagem e expedição na principal zona de transporte rodoviário de cargas de Porto Alegre.',
     iconName: 'Warehouse',
   },
@@ -155,6 +147,6 @@ export const WHY_CHOOSE_US: DifferentialItem[] = [
   {
     number: '03',
     title: 'Personalização "Entender para atender"',
-    description: 'Não buscamos apenas clientes, mas sim parceiros de negócios a longo prazo. Oferecemos um serviço 100% alinhado com o seu lema e necessidades diárias.',
+    description: 'Não buscamos apenas clientes, mas sim parceiros de negócios a longo prazo. Oferecemos um serviço 100% alinhado com as necessidades do seu negócio.',
   },
 ];

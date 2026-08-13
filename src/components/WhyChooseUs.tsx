@@ -53,11 +53,8 @@ export const WhyChooseUs: React.FC = () => {
         {/* Lema & CTA Banner */}
         <div className="bg-gradient-to-r from-[#004058] via-[#072B3C] to-[#004058] text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 border border-white/10">
           <div className="space-y-3 max-w-2xl text-center lg:text-left">
-            <span className="px-3.5 py-1 rounded-full bg-[#689F38] text-white text-xs font-extrabold uppercase tracking-wider">
-              Nosso Lema
-            </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              "{COMPANY_INFO.lema}"
+              Soluções Logísticas Customizadas para a sua Empresa
             </h3>
             <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
               Descubra como nossa tabela simplificada e comunicação direta podem otimizar os custos e prazos de entrega do seu negócio hoje mesmo.

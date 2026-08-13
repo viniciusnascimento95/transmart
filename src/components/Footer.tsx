@@ -17,11 +17,7 @@ export const Footer: React.FC = () => {
               Soluções eficientes e seguras no transporte de cargas e logística inteligente na Região Metropolitana de Porto Alegre e RS.
             </p>
 
-            <div className="pt-2">
-              <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-[#78AB59] text-xs font-bold border border-white/10">
-                "{COMPANY_INFO.lema}"
-              </span>
-            </div>
+
           </div>
 
           {/* Col 2: Navigation Links */}

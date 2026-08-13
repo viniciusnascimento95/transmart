@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Calculator, ShieldCheck, Clock, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { MessageSquare, Calculator, ShieldCheck, MapPin, ArrowRight, CheckCircle2, Globe } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 import { Logo } from './Logo';
 
@@ -32,23 +32,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Conectando pessoas e negócios com agilidade, transparência e alta pontualidade. Operação focada no lema <strong className="text-white italic">"Entender para atender"</strong>.
+              Conectando pessoas e negócios com agilidade, transparência e alta pontualidade.
             </p>
 
             {/* Feature Badges Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
               <div className="flex items-center gap-2.5 p-3.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm">
-                <Clock className="w-5 h-5 text-[#78AB59] shrink-0" />
+                <Globe className="w-5 h-5 text-[#78AB59] shrink-0" />
                 <div className="text-left">
-                  <p className="text-xs font-bold text-white">Atendimento 24h</p>
-                  <p className="text-[11px] text-slate-300">Região Metropolitana</p>
+                  <p className="text-xs font-bold text-white">Abrangência Estadual</p>
+                  <p className="text-[11px] text-slate-300">Todo o Rio Grande do Sul</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 p-3.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm">
                 <MapPin className="w-5 h-5 text-[#3FA3C4] shrink-0" />
                 <div className="text-left">
-                  <p className="text-xs font-bold text-white">CD 650m² em POA</p>
+                  <p className="text-xs font-bold text-white">CD em POA</p>
                   <p className="text-[11px] text-slate-300">Zona Estratégica</p>
                 </div>
               </div>
@@ -101,16 +101,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#78AB59] shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Frete Dedicado & Last Mile</p>
-                    <p className="text-xs text-slate-600">Coletas diretas sem paradas ou consolidação desnecessária.</p>
+                    <p className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Frete Dedicado</p>
+                    <p className="text-xs text-slate-600">Veículo exclusivo com coleta e entrega com data e hora marcada.</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#3FA3C4] shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Cross-docking em 24h</p>
-                    <p className="text-xs text-slate-600">Cronograma diário automático de coleta e entrega acelerada.</p>
+                    <p className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Last Mile</p>
+                    <p className="text-xs text-slate-600">Logística de última milha do CD até o cliente final.</p>
                   </div>
                 </div>
 
@@ -118,13 +118,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
                   <CheckCircle2 className="w-5 h-5 text-[#C0A045] shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Cobrança Simplificada</p>
-                    <p className="text-xs text-slate-600">Métricas transparentes ajustadas ao lema "Entender para atender".</p>
+                    <p className="text-xs text-slate-600">Métricas transparentes e alinhadas com o seu negócio.</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
-                <span>📍 Av. Plínio Kroeff, 1100 - POA</span>
+                <span>📍 Av. Bernardino Silveira Amorim, 1485 - POA</span>
                 <span className="font-extrabold text-[#004058]">(51) 98653-3190</span>
               </div>
             </div>
