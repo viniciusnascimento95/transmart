@@ -8,6 +8,7 @@ import { CoveragePage } from '../pages/CoveragePage';
 import { CityDetailPage } from '../pages/CityDetailPage';
 import { InfrastructurePage } from '../pages/InfrastructurePage';
 import { ContactPage } from '../pages/ContactPage';
+import { ProposalPage } from '../pages/ProposalPage';
 
 interface AppRoutesProps {
   onOpenQuoteModal: () => void;
@@ -24,6 +25,7 @@ export const AppRoutes: React.FC<AppRoutesProps> = ({ onOpenQuoteModal }) => {
       <Route path="/abrangencia/:citySlug" element={<CityDetailPage onOpenQuoteModal={onOpenQuoteModal} />} />
       <Route path="/estrutura" element={<InfrastructurePage />} />
       <Route path="/contato" element={<ContactPage onOpenQuoteModal={onOpenQuoteModal} />} />
+      <Route path="/proposta" element={<ProposalPage />} />
       <Route path="*" element={<HomePage onOpenQuoteModal={onOpenQuoteModal} />} />
     </Routes>
   );
