@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TranSmart | Logística Inteligente & Transporte de Cargas em Porto Alegre e Região</title>
     
+    <!-- SPA redirect restoration for GitHub Pages -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="TranSmart - Soluções eficientes e seguras no transporte de cargas em Porto Alegre e Região Metropolitana. Frete dedicado, Last Mile, Cross-docking em 24h, Paletização e Distribuição." />
     <meta name="keywords" content="transporte de cargas, logística Porto Alegre, frete dedicado, cross-docking 24h, last mile RS, distribuição de cargas, TranSmart" />
