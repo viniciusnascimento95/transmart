@@ -1,22 +1,18 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
-import { COMPANY_INFO } from '../data/content';
+import instagramMockup from '../assets/instagram_mockup_transmart.jpg';
 import { 
   CheckCircle2, 
   XCircle, 
-  MessageSquare, 
   Zap, 
   ShieldCheck, 
-  Clock,  
+  Clock, 
   Gift, 
   Sparkles,
-  ArrowRight,
   HelpCircle
 } from 'lucide-react';
 
 export const ProposalPage: React.FC = () => {
-  const whatsappProposalUrl = `https://wa.me/${COMPANY_INFO.whatsappRaw}?text=Ol%C3%A1%2C%20li%20a%20proposta%20comercial%20do%20site%20e%20gostaria%20de%20confirmar%20o%20aceite%20para%20iniciar!`;
-
   return (
     <>
       <SEO 
@@ -242,7 +238,7 @@ export const ProposalPage: React.FC = () => {
             {/* Visual Mockup Preview */}
             <div className="bg-slate-900 p-4 rounded-2xl text-center space-y-2 border border-slate-800 shadow-xl">
               <img 
-                src="/instagram_mockup_transmart.jpg" 
+                src={instagramMockup} 
                 alt="Simulação do Perfil do Instagram Redesenhado" 
                 className="w-full max-w-[280px] mx-auto rounded-xl shadow-md border border-slate-700"
               />
@@ -291,18 +287,6 @@ export const ProposalPage: React.FC = () => {
                 <span>30 dias de garantia integral e suporte pós-lançamento</span>
               </div>
             </div>
-
-            {/* Main Action Button */}
-            <a
-              href={whatsappProposalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-4 px-6 bg-[#80B168] hover:bg-[#639247] text-white font-extrabold text-base rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer hover:-translate-y-0.5"
-            >
-              <MessageSquare className="w-5 h-5" />
-              <span>Aceitar Proposta & Iniciar no WhatsApp</span>
-              <ArrowRight className="w-5 h-5" />
-            </a>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
