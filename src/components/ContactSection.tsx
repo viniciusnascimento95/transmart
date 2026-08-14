@@ -2,7 +2,11 @@ import React from 'react';
 import { Mail, MapPin, Instagram, MessageSquare } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 
-export const ContactSection: React.FC = () => {
+interface ContactSectionProps {
+  onOpenQuoteModal?: () => void;
+}
+
+export const ContactSection: React.FC<ContactSectionProps> = () => {
   return (
     <section id="contact" className="py-20 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

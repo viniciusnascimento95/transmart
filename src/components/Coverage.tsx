@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { MapPin, Search, CheckCircle2, HelpCircle, ArrowRight } from 'lucide-react';
 import { CITIES_24H, COMPANY_INFO } from '../data/content';
 
-export const Coverage: React.FC = () => {
+interface CoverageProps {
+  onOpenQuoteModal?: () => void;
+}
+
+export const Coverage: React.FC<CoverageProps> = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredCities = CITIES_24H.filter((city) =>

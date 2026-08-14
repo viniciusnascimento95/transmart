@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Services } from './components/Services';
-import { Coverage } from './components/Coverage';
-import { Infrastructure } from './components/Infrastructure';
-import { WhyChooseUs } from './components/WhyChooseUs';
-import { ContactSection } from './components/ContactSection';
+import { AppRoutes } from './routes/AppRoutes';
 import { QuoteFormModal } from './components/QuoteFormModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { Footer } from './components/Footer';
@@ -29,15 +23,9 @@ export function App() {
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col font-sans">
       <Navbar onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
-      <main className="flex-grow">
-        <Hero onOpenQuoteModal={() => handleOpenQuoteModal()} />
-        <About />
-        <Services onOpenQuoteModal={(serviceId) => handleOpenQuoteModal(serviceId)} />
-        <Coverage />
-        <Infrastructure />
-        <WhyChooseUs />
-        <ContactSection />
-      </main>
+      <div className="flex-grow">
+        <AppRoutes onOpenQuoteModal={handleOpenQuoteModal} />
+      </div>
 
       <Footer />
 
