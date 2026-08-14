@@ -127,7 +127,7 @@ export const ProposalPage: React.FC = () => {
           <div className="grid sm:grid-cols-3 gap-4 pt-2">
             <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10 text-center space-y-1">
               <Zap className="w-6 h-6 text-[#80B168] mx-auto" />
-              <h4 className="font-bold text-sm text-white">Carregamento < 1s</h4>
+              <h4 className="font-bold text-sm text-white">Carregamento &lt; 1s</h4>
               <p className="text-xs text-slate-300">Abre instantaneamente em celulares 3G/4G.</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10 text-center space-y-1">
